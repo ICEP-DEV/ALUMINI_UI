@@ -1,13 +1,16 @@
 .header{
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
   opacity: 60%;
-  height:300px;
+  height:400px;
   display: flex;
-  background: url("/assets/image/b.jpg");
+  background: url("/assets/image/gal.png");
   background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
@@ -204,3 +207,6 @@ margin-bottom: 20px;
 .portfolio-details .portfolio-description p {
 padding: 0;
 }
+ul li{
+padding: 5px;
+margin-left: 8px;}

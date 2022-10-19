@@ -4,7 +4,7 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 // import { ToastrModule } from 'ngx-toastr';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+// import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './components/partials/search/search.component';
@@ -20,6 +20,7 @@ import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { EventsComponent } from './components/pages/events/events.component';
 import { EventPageComponent } from './components/pages/event-page/event-page.component';
 import { ViewprofileComponent } from './components/pages/viewprofile/viewprofile.component';
+// import { DialogComponent } from './components/partials/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +38,13 @@ import { ViewprofileComponent } from './components/pages/viewprofile/viewprofile
     EventsComponent,
     EventPageComponent,
     ViewprofileComponent,
+    // DialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    // MatDialogModule
     // ToastrModule.forRoot({
     //   timeOut:3000,
     //   positionClass:'toast-bottom-right',

@@ -4,15 +4,12 @@
   flex-direction: column;
 
   opacity: 60%;
-  height:300px;
+  height:400px;
   display: flex;
-  background: url("/assets/b.jpg");
+  background: url("/assets/image/event.png");
   background-position: center top;
-
-
-
-
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-description{
   align-self: flex-start;
@@ -53,6 +50,8 @@
 }
 .heading{
   margin-top: 40px ;
+  flex-direction: column;
+  padding-left: 20px;
   display: flex;
   justify-content: center;
 }
@@ -67,10 +66,11 @@
 }
 .sections{
   display: flex;
+  // height: 93vh;
   justify-content: space-around;
+
 }
 .sections .left-section{
-  width: 30%;
   border: 1px solid rgb(176, 176, 176);
   border-top: none;
   border-left: none;
@@ -79,6 +79,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background:  #03009C;
+  padding-left: 0px;
+  width: 25%;
+
 }
 .left-section a > h3{
   padding-left: 40px;
@@ -87,23 +91,26 @@
 }
 
 .right-section{
-  width: 90%;
+  width: 75%;
   display: flex;
   align-items: flex-start;
   padding-left: 30px;
   flex-direction: column;
+  height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .right-section h1{
   font-size: 15px;
 }
 .post-data{
-  width: 80%;
-  height: 500px;
+  width: 100%;
+  height: fit-content;
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  // flex-direction: column;
+  padding: 30px;
   overflow-x: hidden;
+
 }
 
 .post-data button{
@@ -140,16 +147,41 @@ ul{
 }
 
 ul li,a{
-  color: darkgray;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+}
+ul li{
+  padding-top:25px;
 }
 a:hover{
   color: red;
 }
-a:active{
-  color: red;
-}
+
 a[tabindex]:focus {
   color:red;
   outline: none;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 50rem;
+  margin-top: 50px;
+}
+
+.row::after
+{
+  content:"";
+  display: table;
+  clear:both;
+}
+.row{margin:0 -1px;}
+@media screen and (max-width:600px){
+  .column{
+    width:100%;
+    display:block;
+    margin-bottom: 20px;
+  }
+}
+
+h4{
+  font-size: 20px;
 }

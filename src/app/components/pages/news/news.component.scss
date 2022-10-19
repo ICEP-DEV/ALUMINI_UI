@@ -81,6 +81,7 @@
 .sections{
   display: flex;
   justify-content: space-around;
+  height: 93vh;
 }
 .sections .left-section{
   width: 20%;
@@ -108,7 +109,7 @@
   align-items: flex-start;
   padding-left: 30px;
   flex-direction: column;
-  height: 600px;
+  height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden
 }
@@ -199,4 +200,7 @@ a[tabindex]:focus {
 }
 .top-section{
   margin-top:50px;
+}
+h4{
+  font-size: 20px;
 }

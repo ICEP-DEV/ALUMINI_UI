@@ -1,87 +1,85 @@
-.p
-{
 
-        color: hsl(227, 10%, 46%);
-        font-size: 13px;
-
-}
-.wrapper {
-
-
-    display: flex;
-    align-items: center;
-    min-height: 10vh;
-    background: url("src/assets/image/R.jpg");
-    background-position: center top;
-    background-size:cover;
+.profile .profile-card img {
+  max-width: 150px;
 }
 
-.wrapper img
-{
-
-
-    justify-content: center;
-    align-items: center;
-
-    width: 200px;
-    height: 200px;
-     border: 1px solid black;
-   object-fit: cover;
-   border-top-left-radius: 50% 50%;
-   border-top-right-radius: 50% 50%;
-   border-bottom-left-radius: 50% 50%;
-   border-bottom-right-radius: 50% 50%;
-   margin-left: 550px;
- margin-bottom:-55px;
-
-}
-.image{
-    background-color:rgba(169, 169, 169, 0);
-
-}
-.col
-{
-    text-align: center;
-    justify-content:center;
-    font-size: larger;
-}
-.btn
-{
-    text-align: center;
-    background-color:rgba(128, 128, 128, 0.688);
-    color: aliceblue;
-    padding: 5px 5px;
-border-radius: 30px;
-
-border-color:darkorange;
-stroke-opacity: 200%;
-
-
-
-
-}
-.btn:hover{
- background-color:red;
+.profile .profile-card h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2c384e;
+  margin: 10px 0 0 0;
 }
 
-.p1
-{
-    display: flex;
-    justify-content:space-evenly;
-    border-top: 1px solid hsla(227, 10%, 46%, 0.2);
-    padding: 10px 20px;
-    margin-top: 10px;
+.profile .profile-card h3 {
+  font-size: 30px;
 }
-.p1 p.num{
-    font-size: 18px;
-    color: hsl(229, 23%, 23%);
-    font-weight: 700;
-    margin-bottom: 5px;
+.rounded-circle {
+  border-radius: 50%!important;
+  height: 140px;
 }
 
-
-.form-control{
-    justify-content: center;
-    text-align: center;
+.profile .profile-card .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
+.profile .profile-card .social-links a:hover {
+  color: #012970;
+}
+
+.profile .profile-overview .row {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.profile .profile-overview .card-title {
+  color: #012970;
+}
+
+.profile .profile-overview .label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit img {
+  max-width: 120px;
+}
+
+  #main {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+  position: relative;
+
+
+}
+
+@media (max-width: 1000px) {
+  #main {
+    padding: 20px;
+    position: relative;
+  }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+    color: #444444;
+    position: relative;
+
+  }
+
+  a {
+    color: #4154f1;
+    text-decoration: none;
+  }

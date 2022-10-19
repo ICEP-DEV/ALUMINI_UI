@@ -7,11 +7,12 @@ import { PostserviceService } from 'src/app/services/postservice.service';
 })
 export class ViewprofileComponent implements OnInit {
   userprofile:any;
-	constructor(private service:PostserviceService){}
+//	constructor(private service:PostService){}
 
 	ngOnInit(): void {
-		this.service.getUserprofile().subscribe(response=>{this.userprofile = response; console.log});
+		//this.service.getUserprofile().subscribe(response=>{this.userprofile = response; console.log});
 	}
+
   url:any;
  //Angular 11, for stricter type
 	msg = "";
