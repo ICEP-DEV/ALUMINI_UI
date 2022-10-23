@@ -1,8 +1,8 @@
 <div class="search">
-  <input #s type="text" list="alumni-list" id="alumnus" placeholder="All" autocomplete="" (keyup.enter)="search(s.value)" [value]="searchTerm">
+  <input #s type="text" list="alumni-list" id="alumnus" placeholder="All" autocomplete="" (keyup)="search(s.value)" [value]="searchTerm">
   <!-- Can the placeolder be Search for alumni -->
   <datalist id="alumni-list">
-    <option  *ngFor="let a of alumni" [value]="a.alumni_name +' '+ a.alumni_name +' | ' + a.alumni_faculty"></option>
+    <option  *ngFor="let a of alumni" [value]="a.alumni_name +' '+ a.alumni_surname +' | ' + a.alumni_faculty"></option>
   </datalist>
   <button (click)="search(s.value)">Filter</button>
 </div>

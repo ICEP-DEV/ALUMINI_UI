@@ -9,6 +9,7 @@ import { Alumni } from 'src/app/shared/models/Alumni';
   styleUrls: ['./findalumni.component.scss']
 })
 export class FindalumniComponent implements OnInit {
+  headerTitle = "#LET'S CONNECT";
 
   alumnus:Alumni[] = [];
   constructor(private alumniService:AlumniService,activatedRoute:ActivatedRoute) {

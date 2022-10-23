@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NewsService } from 'src/app/services/news.service';
+import { News } from 'src/app/shared/models/news';
 
 @Component({
   selector: 'app-news',
@@ -10,9 +13,18 @@ export class NewsComponent implements OnInit {
   headerDescription:string="";
   backgroundImg:string="";
 
-  constructor() { }
+  news:News[]=[];
+  constructor(
+    newService:NewsService,
+    activatedRoute:ActivatedRoute
+  ) {
+    activatedRoute.params.subscribe((params)=>{
+        this.news = newService.getAllNews();
+    })
+  }
 
   ngOnInit(): void {
+    this.news;
   }
 
 }

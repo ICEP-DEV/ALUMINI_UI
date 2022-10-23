@@ -1,15 +1,25 @@
+// .header{
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   opacity: 60%;
+//   height:400px;
+//   display: flex;
+//   background: url("/assets/evnt.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 .header{
+  height: 400px;
+  // background: rgb(36, 34, 34);
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  opacity: 60%;
-  height:400px;
-  display: flex;
-  background: url("/assets/image/event.png");
-  background-position: center top;
+  background: url("/assets/golf.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 .header-description{
   align-self: flex-start;
@@ -18,16 +28,15 @@
   font-size: 30px;
   margin: 0;
   color: white;
-
-
 }
 .header >h1{
   color: white;
   font-size: 60px;
-  z-index: 1;
-  background-color:red;
-  border-radius: 10px;
-
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 0, 0, 0.824);
+  padding: 10px 50px;
+  border-radius: 20px;
 }
 
 /*********************/

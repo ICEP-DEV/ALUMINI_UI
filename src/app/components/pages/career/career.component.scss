@@ -28,10 +28,13 @@ h4{
 
 }
 .header >h1{
-  color: black;
+  color: white;
   font-size: 60px;
   display: flex;
   justify-content: center;
+  background: rgba(99, 99, 99, 0.824);
+  padding: 10px 50px;
+  border-radius: 20px;
 }
 
 /*********************/

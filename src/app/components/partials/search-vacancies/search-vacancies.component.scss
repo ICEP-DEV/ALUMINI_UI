@@ -1,0 +1,33 @@
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px;
+  margin-left: 10%;
+  padding: 50px 0 50px 0;
+}
+.search input{
+  outline: none;
+  width: 70%;
+  height: 44px;
+  border-right: none;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 10px;
+}
+button{
+  height: 44px;
+  width: 200px;
+  background: #03009C;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  font-size: 18px;
+  border: 1px solid blue;
+}
+button:hover{
+  cursor: pointer;
+}
+datalist{
+  height: 20px;
+  overflow: scroll;
+}

@@ -54,55 +54,37 @@
       </div>
 
       <div class="right-section">
-        <div class="top-section">
+        <!-- <div class="top-section">
 
         <h2>On campus and beyond the gates,#TUT_Alumni News
         </h2>
         <p>From virtual conversations on research and issues of the day to alumni networking and social gatherings, find events that will keep you engaged with #TUT_ALUMNI and in the life of the University..</p>
 
-        </div>
+        </div> -->
         <!-- <app-search></app-search> -->
 
         <div class="contents">
           <div class="heading">
-            <h1> Latest News</h1>
+            <h1>{{headerTitle}}</h1>
            </div>
-           <div class="post-data">
-            <img src="../../../../assets/vol.png" alt="">
-            <div class="post-details">
+           <div class="post-data" *ngFor="let n of news">
+            <img src="../../../../assets/{{n.news_Img}}" alt="">
+            <div class="post-details" >
               <div class="details-heading">
-                <h2>NEWS TITLE </h2>
+                <h2>{{n.news_title}} </h2>
                 <p>Posted: Tuesday, 14 September 2022</p>
               </div>
               <div class="info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Aliquid in est doloremque illo voluptatem iusto a
-                  rchitecto, delectus et, inventore debitis, voluptatibus
-                  officiis quae
-                 quod accusamus temporibus praesentium unde. Distinctio, beatae?</p>
+                <p>{{n.news_details}}</p>
+                </div>
+                <div class="readmore">
+                  <button>Read more</button>
+
                 </div>
             </div>
+
             </div>
-        </div>
-        <div>
-          <div class="heading">
-           </div>
-           <div class="post-data">
-            <img src="../../../../assets/vol.png" alt="">
-            <div class="post-details">
-              <div class="details-heading">
-                <h2>NEWS TITLE </h2>
-                <p>Posted: Tuesday, 14 September 2022</p>
-              </div>
-              <div class="info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Aliquid in est doloremque illo voluptatem iusto a
-                  rchitecto, delectus et, inventore debitis, voluptatibus
-                  officiis quae
-                 quod accusamus temporibus praesentium unde. Distinctio, beatae?</p>
-                </div>
-            </div>
-            </div>
+
         </div>
       </div>
     </div>

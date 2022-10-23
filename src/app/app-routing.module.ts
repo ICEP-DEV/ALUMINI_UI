@@ -10,12 +10,14 @@ import { FindalumniComponent } from './components/pages/findalumni/findalumni.co
 import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { NewsComponent } from './components/pages/news/news.component';
 import { ViewprofileComponent } from './components/pages/viewprofile/viewprofile.component';
+import { SearchVacanciesComponent } from './components/partials/search-vacancies/search-vacancies.component';
 
 const routes: Routes = [
 {path:'',component:FindalumniComponent},
 
 //partials
 {path:'search/:searchTerm',component:FindalumniComponent},
+{path:'career/searchFaculty/:searchTerm',component:CareerComponent},
 
 //everyone
 {path:'career',component:CareerComponent},

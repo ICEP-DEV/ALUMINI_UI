@@ -1,17 +1,20 @@
-<app-header></app-header>
-<div class="heading">
- <h1> Find Friends</h1>
-</div>
+<div class="header">
+  <h1>{{headerTitle}}</h1>
+  <div class="header-description">
+    <!-- <p>{{headerDescription}}</p> -->
+  </div>
+  </div>
 <app-search></app-search>
 <div class="alunmiPreview">
   <ul>
     <li *ngFor="let alumni of alumnus">
       <div class="alumni">
       <img [src]="alumni.alumni_image" [alt]="alumni.alumni_name">
-        <h3>{{alumni.alumni_name}} {{alumni.alumni_name}}</h3>
+        <h3>{{alumni.alumni_name}} {{alumni.alumni_surname}}</h3>
+        <span>{{alumni.alumni_faculty}} | Class of: {{alumni.alumni_gdate}}</span>
         <div class="details">
           <button>Follow</button>
-          <button>Message</button>
+          <a routerLink="/chat"><button>Message</button></a>
         </div>
       </div>
     </li>
@@ -25,7 +28,7 @@
   </div> -->
 </div>
 
-<div class="heading">
+<!-- <div class="heading">
   <h1> Shared Opportunities</h1>
  </div>
  <app-search></app-search>
@@ -107,13 +110,6 @@
     </li>
 
   </ul>
-  <!-- <div class="pagination">
-     <a href="#">&laquo;</a>
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">...</a>
-    <a href="#">&raquo;</a>
-  </div> -->
+
 </div>
+-->

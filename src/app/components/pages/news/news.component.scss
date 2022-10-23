@@ -1,39 +1,39 @@
 
 .header{
   height: 400px;
-  // background: rgb(36, 34, 34);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../../../../assets/back.jfif");
+  background-image: url("../../../../assets/back.jfif") !important;
 }
 .header-description{
-  align-self: flex-start;
-  padding-left: 20px;
-  max-width: 500px;
-  font-size: 30px;
-  margin: 0;
-  color: white;
+  align-self: flex-start !important;
+  padding-left: 20px !important;
+  max-width: 500px !important;
+  font-size: 30px !important;
+  margin: 0 !important;
+  color: white !important;
 }
 .header-description p{
-  margin-top:100px;
-  color: black;
-  z-index: 1;
-  background-color: white;
+  margin-top:100px !important;
+  color: black !important;
+  z-index: 1 !important;
+  background-color: white !important;
 
 }
 .header >h1{
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 60px;
-  z-index: 1;
-  background: rgba(255, 165, 0, 0.63);
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 165, 0, 0.824);
   padding: 10px 50px;
   border-radius: 20px;
-
 }
 
 /*********************/
+
 .heading h1{
   font-size: 36px;
   position: relative;
@@ -43,20 +43,20 @@
   position: absolute;
   bottom: -10px;
   content: " ";
-  width:200px;
+  width:100px;
   background:black;
   height:2px;
-  left: 0%;
+  left: 8%;
   right: 0%;
   background: red;
 
 }
 .heading{
   margin-top: 40px ;
-  flex-direction: column;
   padding-left: 20px;
   display: flex;
   justify-content: center;
+  // flex-direction: column;
 }
 .banner{
  background: rgba(255, 165, 0, 1);
@@ -114,27 +114,34 @@
   overflow-x: hidden
 }
 
-.post-data{
-  width: 100%;
-  height: fit-content;
-  display: flex;
+.post-data {
+  width: 100% !important;
+  height: fit-content !important;
+  display: flex !important;
   // flex-direction: column;
-  padding: 30px;
-  overflow-x: hidden;
+  padding: 30px !important;
+  overflow-x: hidden !important;
 
 }
 
-.post-data button{
-  width: 100px;
-  align-self: center;
-  border-radius: 20px;
+.post-data button {
+  width: 120px !important;
+  align-self: center !important;
+  border-radius: 8px !important;
   outline: none;
-  border: 2px solid yellow;
-  background: red;
-  font-size: 16px;
+  border: 1px solid blue;
+  /* background: red; */
+  font-size: 18px;
   padding: 5px;
-  color: white;
+  color: blacke;
   font-weight: 600;
+}
+
+.post-data button:hover {
+  border: 1px solid blue;
+  color: white;
+  background-color: blue;
+
 }
 .post-data img{
   object-fit: cover;
@@ -142,26 +149,29 @@
   height: fit-content;
 }
  img{
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
+  object-fit:cover;
+  max-width: 450px;
+  max-height: 450px;
+  min-width: 450px;
+  min-height: 450px;
 }
 
 .post-details{
-  padding: 10px;
-  display: flex;
-  width: 100%;
+  padding: 40px !important;
+  display: flex !important;
+  width: 100% !important;
   // justify-content: space-between;
   // align-items: center;
-  gap: 20px;
-  font-weight: 700;
-  flex-direction: column;
+  gap: 20px !important;
+  font-weight: 700 !important;
+  flex-direction: column !important;
 }
 .info{
-  max-width: fit-content;
+  max-width: fit-content !important;
 }
 .details-heading p{
-  color: darkgray;
+  color: darkgray !important;
+  margin-left: 100px;
 }
 .details-heading{
   display: flex;
@@ -203,4 +213,7 @@ a[tabindex]:focus {
 }
 h4{
   font-size: 20px;
+}
+h2{
+  max-width: 500px !important;
 }

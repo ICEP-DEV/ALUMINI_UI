@@ -14,7 +14,9 @@ export class AlumniService {
   }
 
   getAlumniBySearchTerm(searchTerm:string){
-    return this.getAllAlumni().filter((alumni)=>{
+    return searchTerm === 'All'?
+    this.getAllAlumni():
+    this.getAllAlumni().filter((alumni)=>{
       return alumni.alumni_name.toLowerCase().includes(searchTerm.toLowerCase());
     })
   }

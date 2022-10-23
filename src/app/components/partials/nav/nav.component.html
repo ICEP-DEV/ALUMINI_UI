@@ -11,7 +11,7 @@
         <div [ngClass]="!isShowDivIf ? 'responsive__active' : 'responsive__inactive'" class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ">
                 <li (click)=toggleDisplayDivIf()  class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="home">Home
+                    <a class="nav-link" routerLink="">Home
                         <span class="sr-only"></span>
                     </a>
                 </li>
@@ -19,7 +19,7 @@
                     <a class="nav-link" routerLink="/about">About</a>
                 </li>
                 <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
-                  <a class="nav-link" routerLink="contact">Contact</a>
+                  <a class="nav-link" routerLink="/">Contact</a>
                 </li>
                 <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
                     <a class="nav-link" routerLink="/events">Event</a>
@@ -31,7 +31,7 @@
                 <a class="nav-link" routerLink="gallery">Gallery</a>
             </li>
             <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
-              <a class="nav-link" routerLink="chat">Connect</a>
+              <a class="nav-link" routerLink="/">Connect</a>
           </li>
           <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
             <a class="nav-link" routerLink="career">Vacancies</a>

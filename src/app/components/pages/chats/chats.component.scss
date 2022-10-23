@@ -1,11 +1,20 @@
-
 .header{
   height: 400px;
-  background: rgb(0, 0, 0);
+  // background: rgb(36, 34, 34);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
+  flex-direction: column;
+  background-image: url("../../../../assets/back.jfif");
+}
+.header >h1{
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  background: rgba(99, 99, 99, 0.824);
+  padding: 10px 50px;
+  border-radius: 20px;
 }
 h1{
   position: absolute;
@@ -15,9 +24,9 @@ h1{
   border-radius: 10px;
 }
 
-.header img{
-  height: 300px;
-}
+// .header img{
+//   height: 300px;
+// }
 
 .container{
   display: flex;

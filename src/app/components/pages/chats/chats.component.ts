@@ -12,7 +12,7 @@ export class ChatsComponent implements OnInit {
 
   headerTitle = "#LET'S CONNECT";
   // headerDescription="Read, watch, listen. #TUT_ALUMNI ahare their experiences, perspectives, and commnunity engagements.";
-  backgroundImg="../../../../assets/BG.png";
+  backgroundImg="../../../../assets/";
 
   constructor() { }
 

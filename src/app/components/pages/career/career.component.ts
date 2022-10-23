@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { FacultiesService } from 'src/app/services/faculties.service';
+import { VacanciesService } from 'src/app/services/vacancies.service';
+import { Vacancies } from 'src/app/shared/models/Vacancies';
 
 @Component({
   selector: 'app-career',
@@ -12,7 +16,18 @@ export class CareerComponent implements OnInit {
   headerDescription:string="";
   backgroundImg:string="";
 
-  constructor() { }
+  Vacancies:Vacancies[]=[];
+  constructor(
+    private vacanyService:VacanciesService,
+    activatedRoute:ActivatedRoute
+  ) {
+    activatedRoute.params.subscribe((params)=>{
+      if(params.searchTerm)
+      this.Vacancies = this.vacanyService.getVacByFaculty(params.searchTerm)
+      else
+      this.Vacancies = vacanyService.getAllVacanccies();
+    })
+   }
 
   ngOnInit(): void {
   }

@@ -65,24 +65,23 @@
     <p>From the value of volunteering to the impact of giving, #TUT_ALUMNI have a great career opportunities to share and stay engaged with TUT,their campus expierences and how they want to change the world.</p>
 
     </div>
-    <app-search></app-search>
-
-    <div class="right-container">
+<app-search-vacancies></app-search-vacancies>
+    <div class="right-container" *ngFor="let v of Vacancies">
       <div class="heading">
-        <h1>Information Technology</h1>
+        <h1>{{v.vac_faculty}}</h1>
        </div>
        <div class="post-data">
         <img src="../../../../assets/office.jpg" alt="">
           <div class="post-details">
-            <p>JOB TITLE<span>:</span> smjbcjshdcbds</p>
-            <p>LOCATION<span>:</span> smjbcjshdcbds</p>
-            <p>POSITION <span>:</span> smjbcjshdcbds</p>
-            <p>COMPANY<span>:</span>smjbcjshdcbds</p>
+            <p>JOB TITLE<span>:</span> {{v.vac_title}}</p>
+            <p>LOCATION<span>:</span> {{v.vac_location}}</p>
+            <p>POSITION <span>:</span> {{v.vac_position}}</p>
+            <p>COMPANY<span>:</span>{{v.vac_company}}</p>
             <button>Apply</button>
           </div>
         </div>
     </div>
-    <div class="right-container">
+    <!-- <div class="right-container">
       <div class="heading">
         <h1>Engineering</h1>
        </div>
@@ -96,6 +95,6 @@
             <button>Apply</button>
           </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </div>

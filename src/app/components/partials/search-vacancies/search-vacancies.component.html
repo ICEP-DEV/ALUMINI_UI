@@ -1,0 +1,8 @@
+<div class="search">
+  <input #s type="text" list="faculty-list" id="faculty" placeholder="All" autocomplete="" (keyup.enter)="searchFaulty(s.value)" [value]="searchTerm">
+  <!-- Can the placeolder be Search for alumni -->
+  <datalist id="faculty-list">
+    <option  *ngFor="let f of faculty" [value]="f.fac_name"></option>
+  </datalist>
+  <button (click)="searchFaulty(s.value)">Faculty</button>
+</div>

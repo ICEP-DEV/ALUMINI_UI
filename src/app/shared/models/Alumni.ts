@@ -5,4 +5,5 @@ export class Alumni{
   alumni_password!:string;
   alumni_image!:string;
   alumni_faculty!:string;
+  alumni_gdate!:String;
 }

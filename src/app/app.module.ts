@@ -20,6 +20,7 @@ import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { EventsComponent } from './components/pages/events/events.component';
 import { EventPageComponent } from './components/pages/event-page/event-page.component';
 import { ViewprofileComponent } from './components/pages/viewprofile/viewprofile.component';
+import { SearchVacanciesComponent } from './components/partials/search-vacancies/search-vacancies.component';
 // import { DialogComponent } from './components/partials/dialog/dialog.component';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ViewprofileComponent } from './components/pages/viewprofile/viewprofile
     EventsComponent,
     EventPageComponent,
     ViewprofileComponent,
+    SearchVacanciesComponent,
     // DialogComponent,
   ],
   imports: [
