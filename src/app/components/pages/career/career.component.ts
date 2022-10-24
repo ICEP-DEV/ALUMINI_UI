@@ -12,7 +12,7 @@ import { Vacancies } from 'src/app/shared/models/Vacancies';
 
 export class CareerComponent implements OnInit {
 
-  headerTitle:string = "#Vaccancies";
+  headerTitle:string = "#Vacancies";
   headerDescription:string="";
   backgroundImg:string="";
 
