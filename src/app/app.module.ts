@@ -17,6 +17,7 @@ import { NewsComponent } from './components/news/news.component';
 import { EventsComponent } from './components/events/events.component';
 import { AboutComponent } from './components/about/about.component';
 import { ViewnewsComponent } from './components/viewnews/viewnews.component';
+import { AdminmanagersvpComponent } from './components/adminmanagersvp/adminmanagersvp.component';
 
 
 
@@ -38,6 +39,7 @@ import { ViewnewsComponent } from './components/viewnews/viewnews.component';
     ViewnewsComponent,
     FooterComponent,
     routingComponents,
+    AdminmanagersvpComponent,
   
   ],
   imports: [
