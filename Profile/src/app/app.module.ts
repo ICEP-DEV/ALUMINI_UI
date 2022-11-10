@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import{HttpHeaders} from '@angular/common/http';
+import { PostService } from './service/post.service';
 import { EventsComponent } from './events/events.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { LoginServiceService } from './services/login-service.service';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { RegistrationComponent } from './registration/registration.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -26,20 +34,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     NavbarComponent,
     EventsComponent,
-    GalleryComponent
+    GalleryComponent,
+    LoginComponent,
+    RegistrationComponent,
+    HomeComponent
+  
    
   ],
   imports: [
-  
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule
   
     
   
   ],
-  providers: [],
+  providers: [PostService,
+  LoginServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

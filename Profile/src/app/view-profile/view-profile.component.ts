@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+import{HttpHeaders} from '@angular/common/http';
 import { PostService } from '../service/post.service';
+import { CommonModule } from '@angular/common'; 
+
+import {Observable, pipe, throwError} from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
 
 
 @Component({
@@ -10,11 +16,25 @@ import { PostService } from '../service/post.service';
 })
 
 export class ViewProfileComponent implements OnInit{
-	userprofile:any;
-	constructor(private service:PostService){}
+	
 
-	ngOnInit(): void {
-		this.service.getUserprofile().subscribe(response=>{this.userprofile = response; console.log});
+	
+	constructor(private service:PostService){}
+	viewProf:any={email:"",
+                faculty:"",
+			id:"",
+			name:"",
+		surname:""}
+	ngOnInit(){
+		this.service.getAllData().subscribe(result=>{
+			console.log(result);
+			this.viewProf=result;
+			console.log(this.viewProf,"==")
+			
+		},
+		(error)=>{
+		  console.log(error)
+		})
 	}
 	
   url:any;
