@@ -30,13 +30,20 @@ export class ViewProfileComponent implements OnInit{
 			console.log(result);
 			this.viewProf=result;
 			console.log(this.viewProf,"==")
+
 			
 		},
 		(error)=>{
 		  console.log(error)
 		})
-	}
 	
+}
+pwdChange(data:any){
+	this.service.postPwd().subscribe(result=>{
+		console.log(result);
+})
+}
+
   url:any;
  //Angular 11, for stricter type
 	msg = "";

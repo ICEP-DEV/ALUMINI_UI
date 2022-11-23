@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
 import {Observable, pipe, throwError} from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { LoginServiceService } from '../services/login-service.service';
 
 
 @Component({
@@ -21,16 +22,16 @@ import { catchError } from 'rxjs/operators';
 export class RegistrationComponent {
    title=" Register Account";
 
-   constructor(private http:HttpClient,private route:Router){
+   constructor(private loginService:LoginServiceService,private route:Router){
      
    }
 
-  onUsers(users:{alumni_name:string,alumni_surname:string,alumni_email:string,alumni_password:string,alumni_faculty:string}){
+  onUsers(data:any){
      
-    console.log(users);
-    this.http.post('http://localhost:3100/api/v1/register',users)
-    .subscribe((res)=>{
-      console.log(res);
+    console.warn(data);
+    this.loginService.regUser(data)
+    .subscribe((result)=>{
+      console.warn(result)
       this.route.navigate(['login']);
       
     },

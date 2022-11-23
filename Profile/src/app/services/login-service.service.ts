@@ -27,8 +27,8 @@ loginUser(user: any):Observable <any>{
   return this.http.post(this.loginUrl,user)
   .pipe(catchError(this.handleError));
 }
-regUser(urs:any):Observable<any>{
-  return this.http.post(this.regUrl,urs)
+regUser(data:any){
+  return this.http.post(this.regUrl,data)
   .pipe(catchError(this.handleError));
 }  
 

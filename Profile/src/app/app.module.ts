@@ -18,6 +18,8 @@ import { LoginServiceService } from './services/login-service.service';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
+import { CareerComponent } from './career/career.component';
+import { UpdatePasswordComponent } from './update-password/update-password.component';
 
 
 
@@ -37,7 +39,9 @@ import { HomeComponent } from './home/home.component';
     GalleryComponent,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    CareerComponent,
+    UpdatePasswordComponent
   
    
   ],
