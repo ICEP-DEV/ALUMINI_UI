@@ -20,6 +20,22 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { CareerComponent } from './career/career.component';
 import { UpdatePasswordComponent } from './update-password/update-password.component';
+import { AboutComponent } from './about/about.component';
+import { AboutsingleComponent } from './aboutsingle/aboutsingle.component';
+import { AdminmanagersvpComponent } from './adminmanagersvp/adminmanagersvp.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ContactComponent } from './contact/contact.component';
+import { DonateComponent } from './donate/donate.component';
+import { NewsComponent } from './news/news.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { ViewnewsComponent } from './viewnews/viewnews.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AddEventsComponent } from './add-events/add-events.component';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { AddNewComponent } from './add-new/add-new.component';
+
 
 
 
@@ -41,7 +57,19 @@ import { UpdatePasswordComponent } from './update-password/update-password.compo
     RegistrationComponent,
     HomeComponent,
     CareerComponent,
-    UpdatePasswordComponent
+    UpdatePasswordComponent,
+    AboutComponent,
+    AboutsingleComponent,
+    AdminmanagersvpComponent,
+    CarouselComponent,
+    ContactComponent,
+    DonateComponent,
+    NewsComponent,
+    SidenavComponent,
+    ViewnewsComponent,
+    AdminLoginComponent,
+    AddEventsComponent,
+    AddNewComponent,
   
    
   ],
@@ -52,13 +80,17 @@ import { UpdatePasswordComponent } from './update-password/update-password.compo
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+ 
+    MdbFormsModule,
+    MdbCarouselModule,
+    MdbValidationModule,
   
     
   
   ],
   providers: [PostService,
-  LoginServiceService ],
+  LoginServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
