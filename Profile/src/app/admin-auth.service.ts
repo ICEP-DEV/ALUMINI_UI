@@ -11,6 +11,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http'
 })
 export class AdminAuthService {
   adEvent='http://localhost:3100/api/v1/event/create_event';
+  adNews='http://localhost:3100/api/v1/news/create_news';
   getToken():string {
     return window.localStorage['jwtToken'];
    }
@@ -36,4 +37,17 @@ export class AdminAuthService {
    
     
   }
+  createNews(data:any):Observable<any>
+  {
+
+
+    let head_obj=new HttpHeaders().set("Authorization",`${this.getToken()}`)
+                                  .set('Content-Type', 'application/json')
+                                  .set('Accept', 'application/json')
+    return this.http.post(`${this.adNews}`,data,{headers:head_obj,responseType: 'text'}).pipe(catchError(this.handleError));
+
+
+
+  }
+
 }

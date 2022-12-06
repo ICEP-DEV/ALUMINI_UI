@@ -16,8 +16,10 @@ import { AdminmanagersvpComponent } from './adminmanagersvp/adminmanagersvp.comp
 import { AddEventsComponent } from './add-events/add-events.component';
 import { AddNewComponent } from './add-new/add-new.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { ChatsComponent } from './chats/chats.component';
 
 const routes: Routes = [
+  {path:'',pathMatch:'full',redirectTo:'home'},
   {path:'view-profile',component:ViewProfileComponent},
 { path:'events',component:EventsComponent},
 {path:'gallery',component:GalleryComponent},
@@ -31,7 +33,8 @@ const routes: Routes = [
 {path: 'adminmanagersvp' , component: AdminmanagersvpComponent},
 {path:'add-events',component:AddEventsComponent},
 {path:'add-news',component:AddNewComponent},
-{path:'admin-login',component:AdminLoginComponent}
+{path:'admin-login',component:AdminLoginComponent},
+{path:'chats',component:ChatsComponent}
 ]
 
 @NgModule({

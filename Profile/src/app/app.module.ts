@@ -35,6 +35,7 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { AddNewComponent } from './add-new/add-new.component';
+import { ChatsComponent } from './chats/chats.component';
 
 
 
@@ -70,6 +71,7 @@ import { AddNewComponent } from './add-new/add-new.component';
     AdminLoginComponent,
     AddEventsComponent,
     AddNewComponent,
+    ChatsComponent,
   
    
   ],
